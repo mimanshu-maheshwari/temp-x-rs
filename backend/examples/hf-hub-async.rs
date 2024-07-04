@@ -1,4 +1,4 @@
-use candle_core::{DType, Device, Tensor};
+use candle_core::{safetensors, DType, Device, Tensor};
 use hf_hub::api::tokio::Api;
 
 use candle_nn::{Linear, Module};
@@ -10,7 +10,7 @@ async fn main() {
 
     let weights_filename = repo.get("model.safetensors").await.unwrap();
 
-    let weights = candle_core::safetensors::load(weights_filename, &Device::Cpu).unwrap();
+    let weights = safetensors::load(weights_filename, &Device::Cpu).unwrap();
 
     let weight = weights
         .get("bert.encoder.layer.0.attention.self.query.weight")
