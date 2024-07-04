@@ -6,20 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# Candle
 candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.6.0", features = [] }
-# Features:
-# - accelerate
-# - cuda
-# - cudarc
-# - cudnn
-# - metal
-# - mkl
 candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.6.0", features = [] }
+candle-transformers = { git = "https://github.com/huggingface/candle.git", version = "0.6.0", features = [] }
+
+# hf-hub
 hf-hub = { version = "0.3.2", features = ["tokio"] }
+
+# safetensors
 safetensors = "0.4.3"
+
+# tokio
 tokio = { version = "1.38.0", features = ["full"] }
-# Features:
-# - accelerate
-# - cuda
-# - metal
-# - mkl
