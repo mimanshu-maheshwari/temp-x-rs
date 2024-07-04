@@ -16,6 +16,8 @@ hf-hub = { version = "0.3.2", features = ["tokio"] }
 
 # safetensors
 safetensors = "0.4.3"
+serde_json = "1.0.120"
+tokenizers = "0.19.1"
 
 # tokio
 tokio = { version = "1.38.0", features = ["full"] }
