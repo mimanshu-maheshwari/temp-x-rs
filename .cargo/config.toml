@@ -1,0 +1,9 @@
+[alias]
+b = "build"
+br = "build -r"
+r = "run" 
+rr = "run -r"
+d = "doc"
+do = "doc --open"
+c = "check"
+cl = "clean"
