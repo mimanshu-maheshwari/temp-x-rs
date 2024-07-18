@@ -21,3 +21,6 @@ tokenizers = "0.19.1"
 
 # tokio
 tokio = { version = "1.38.0", features = ["full"] }
+
+# os 
+walkdir = "2.5.0"
